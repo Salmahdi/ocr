@@ -6,6 +6,7 @@ import 'package:ocr/core/lang/supported_languages.dart';
 import 'package:ocr/core/themes/app_theme.dart';
 import 'package:ocr/features/localization/app_localization.dart';
 import 'package:ocr/features/localization/cubit/cubit/locale_cubit.dart';
+import 'package:ocr/features/ocr/presentation/pages/home_page.dart';
 import 'package:ocr/features/onboarding/presentation/pages/onboarding_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -14,7 +15,9 @@ void main() async {
 
   final sharedPreferences = await SharedPreferences.getInstance();
   final isShowHome = sharedPreferences.getBool('show_home') ?? false;
-  runApp(MyApp(isShowHome: isShowHome),);
+  runApp(
+    MyApp(isShowHome: isShowHome),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -58,8 +61,7 @@ class MyApp extends StatelessWidget {
             },
             debugShowCheckedModeBanner: false,
             theme: appTheme,
-            
-            home: const OnboardingPage(),
+            home: isShowHome ? const HomePage() : const OnboardingPage(),
           ),
         );
       }),
