@@ -1,5 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ocr">
+    package="c">
+
+    
 
     <!-- Provide required visibility configuration for API level 30 and above -->
     <queries>
@@ -30,7 +32,7 @@
         </intent>
     </queries>
     <application
-        android:label="OCR"
+        android:label="Image to Text "
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

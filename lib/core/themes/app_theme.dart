@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 //App Theme
 
@@ -7,12 +8,12 @@ final appTheme = ThemeData(
   scaffoldBackgroundColor: Colors.white,
 
   //* AppBar Theme
-  appBarTheme: const AppBarTheme(
+  appBarTheme:  AppBarTheme(
     centerTitle: true,
     
-    iconTheme: IconThemeData(color: Colors.white, size: 30),
+    iconTheme: IconThemeData(color: Colors.white, size: 30.sp),
     titleTextStyle: TextStyle(
-        color: Colors.white, fontSize: 22, fontWeight: FontWeight.bold),
+        color: Colors.white, fontSize: 22.sp, fontWeight: FontWeight.bold),
   ),
 
   //* Text Theme
@@ -24,9 +25,9 @@ final appTheme = ThemeData(
   ),
 
   //* BottomNavigationBar Theme
-  bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+  bottomNavigationBarTheme:  BottomNavigationBarThemeData(
     selectedIconTheme: IconThemeData(
-      size: 40,
+      size: 40.sp,
     ),
   ),
 
