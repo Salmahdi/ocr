@@ -42,7 +42,7 @@ class OnboardingPage extends StatelessWidget {
                   image: 'assets/images/onboarding/text-recognition.gif',
                   title: 'Fetures',
                   description:
-                      '• Recognize image from camera\n• Recognize image from gallery\n• Storing text and image recognized\n• Supporting 6 languages fro the app\n• Supporting 5 languages fro the text recognizing',
+                      '• Recognize image from camera\n• Recognize image from gallery\n• Storing text and image recognized\n• Supporting 6 languages for the app\n• Supporting 5 languages for the text recognizing',
                   textColor: Colors.white,
                 ),
 

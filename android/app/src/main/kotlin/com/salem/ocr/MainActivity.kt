@@ -1,4 +1,4 @@
-package com.example.ocr
+package com.salem.ocr
 
 import io.flutter.embedding.android.FlutterActivity
 
